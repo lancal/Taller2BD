@@ -1,0 +1,48 @@
+c:\users\acald\documents\visual studio 2015\Projects\Taller2BD\Taller2BD\bin\Debug\Taller2BD.exe.config
+c:\users\acald\documents\visual studio 2015\Projects\Taller2BD\Taller2BD\obj\Debug\Taller2BD.Resources.resources
+c:\users\acald\documents\visual studio 2015\Projects\Taller2BD\Taller2BD\obj\Debug\Taller2BD.vbproj.GenerateResource.Cache
+c:\users\acald\documents\visual studio 2015\Projects\Taller2BD\Taller2BD\obj\Debug\Taller2BD.xml
+c:\users\acald\documents\visual studio 2015\Projects\Taller2BD\Taller2BD\bin\Debug\Taller2BD.exe
+c:\users\acald\documents\visual studio 2015\Projects\Taller2BD\Taller2BD\bin\Debug\Taller2BD.pdb
+c:\users\acald\documents\visual studio 2015\Projects\Taller2BD\Taller2BD\bin\Debug\Taller2BD.xml
+c:\users\acald\documents\visual studio 2015\Projects\Taller2BD\Taller2BD\obj\Debug\Taller2BD.exe
+c:\users\acald\documents\visual studio 2015\Projects\Taller2BD\Taller2BD\obj\Debug\Taller2BD.pdb
+c:\users\acald\documents\visual studio 2015\Projects\Taller2BD\Taller2BD\obj\Debug\Taller2BD.Login.resources
+c:\users\acald\documents\visual studio 2015\Projects\Taller2BD\Taller2BD\obj\Debug\Taller2BD.Administrador.resources
+C:\Users\acald\Documents\Visual Studio 2015\Projects\Taller2BD\Taller2BD\obj\Debug\Taller2BD.AtencionAlCliente.resources
+C:\Users\acald\Documents\Visual Studio 2015\Projects\Taller2BD\Taller2BD\obj\Debug\Taller2BD.Clientevb.resources
+C:\Users\acald\Documents\Visual Studio 2015\Projects\Taller2BD\Taller2BD\obj\Debug\Taller2BD.Trabajador.resources
+C:\Users\acald\Documents\Visual Studio 2015\Projects\Taller2BD\Taller2BD\obj\Debug\Taller2BD.seleccion.resources
+C:\Users\acald\Documents\Visual Studio 2015\Projects\Taller2BD\Taller2BD\obj\Debug\Taller2BD.vbprojResolveAssemblyReference.cache
+<<<<<<< HEAD
+C:\Users\RaosF\Documents\GitHub\bin\Debug\Taller2BD.exe.config
+C:\Users\RaosF\Documents\GitHub\obj\Debug\Taller2BD.exe
+C:\Users\RaosF\Documents\GitHub\obj\Debug\Taller2BD.xml
+C:\Users\RaosF\Documents\GitHub\obj\Debug\Taller2BD.pdb
+C:\Users\RaosF\Documents\GitHub\bin\Debug\Taller2BD.exe
+C:\Users\RaosF\Documents\GitHub\bin\Debug\Taller2BD.pdb
+C:\Users\RaosF\Documents\GitHub\bin\Debug\Taller2BD.xml
+C:\Users\RaosF\Documents\GitHub\obj\Debug\Taller2BD.vbprojResolveAssemblyReference.cache
+C:\Users\RaosF\Documents\GitHub\obj\Debug\Taller2BD.Administrador.resources
+C:\Users\RaosF\Documents\GitHub\obj\Debug\Taller2BD.AtencionAlCliente.resources
+C:\Users\RaosF\Documents\GitHub\obj\Debug\Taller2BD.Clientevb.resources
+C:\Users\RaosF\Documents\GitHub\obj\Debug\Taller2BD.MenuAdministrador.resources
+C:\Users\RaosF\Documents\GitHub\obj\Debug\Taller2BD.login.resources
+C:\Users\RaosF\Documents\GitHub\obj\Debug\Taller2BD.MenuTrabajador.resources
+C:\Users\RaosF\Documents\GitHub\obj\Debug\Taller2BD.Resources.resources
+C:\Users\RaosF\Documents\GitHub\obj\Debug\Taller2BD.seleccion.resources
+C:\Users\RaosF\Documents\GitHub\obj\Debug\Taller2BD.Trabajador.resources
+C:\Users\RaosF\Documents\GitHub\obj\Debug\Taller2BD.vbproj.GenerateResource.Cache
+C:\Users\RaosF\Documents\GitHub\obj\Debug\Taller2BD.ControlVuelos.resources
+=======
+C:\Users\acald\Documents\Visual Studio 2015\Projects\Taller2BD\Taller2BD\obj\Debug\Taller2BD.MenuAdministrador.resources
+C:\Users\acald\Documents\Visual Studio 2015\Projects\Taller2BD\Taller2BD\obj\Debug\Taller2BD.MenuCliente.resources
+C:\Users\acald\Documents\Visual Studio 2015\Projects\Taller2BD\Taller2BD\obj\Debug\Taller2BD.MenuTrabajador.resources
+C:\Users\acald\Documents\Visual Studio 2015\Projects\Taller2BD\Taller2BD\obj\Debug\Taller2BD.DespliegueTrabajadores.resources
+>>>>>>> a6c057bf044cc77d3c5245c174b53ca1e468bb43
+C:\Users\RaosF\Documents\GitHub\obj\Debug\Taller2BD.DespliegueTrabajadores.resources
+C:\Users\RaosF\Documents\GitHub\obj\Debug\Taller2BD.MenuCliente.resources
+C:\Users\acald\Documents\Visual Studio 2015\Projects\Taller2BD\bin\Debug\Taller2BD.exe.config
+C:\Users\acald\Documents\Visual Studio 2015\Projects\Taller2BD\obj\Debug\Taller2BD.exe
+C:\Users\acald\Documents\Visual Studio 2015\Projects\Taller2BD\obj\Debug\Taller2BD.xml
+C:\Users\acald\Documents\Visual Studio 2015\Projects\Taller2BD\obj\Debug\Taller2BD.pdb
