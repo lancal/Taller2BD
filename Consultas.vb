@@ -27,6 +27,18 @@
         Return conexion.QueryConRetorno(query)
     End Function
 
+    Public Function getAvionPorCodigo(ByVal motor As String, ByVal codigo As String, ByVal tabla As String) As DataTable
+        Dim query As String
+        If (motor = "postgresql") Then
+            query = "SELECT codAvion FROM """ & tabla & """ WHERE codAvion = '" & codigo & "';"
+        Else
+            query = "SELECT codAvion FROM " & tabla & " WHERE codAvion = '" & codigo & "';"
+        End If
+        motor = "access"
+        Dim conexion As New Conexiones(motor)
+        Return conexion.QueryConRetorno(query)
+    End Function
+
     Public Function getDatosUsuarioPorRut(ByVal motor As String, ByVal rut As String, ByVal tabla As String) As DataTable
         Dim query As String
         If (motor = "postgresql") Then
@@ -38,6 +50,8 @@
         Dim conexion As New Conexiones(motor)
         Return conexion.QueryConRetorno(query)
     End Function
+
+
 
     Public Sub agregarPersona(ByVal motor As String, ByVal rut As String, ByVal nombre As String, ByVal appPaterno As String, ByVal appMaterno As String, ByVal edad As Integer, ByVal clave As String, ByVal correo As String)
         Dim query As String
@@ -70,6 +84,18 @@
             query = "INSERT INTO ""PersonaTelefonos"" VALUES ('" & rut & "','" & telefono & "');"
         Else
             query = "INSERT INTO personatelefono VALUES ('" & rut & "','" & telefono & "');"
+        End If
+
+        Dim conexion As New Conexiones(motor)
+        conexion.QuerySinRetorno(query)
+    End Sub
+
+    Public Sub agregarAvion(ByVal motor As String, ByVal codAvion As String, ByVal modelo As String, ByVal nombrePiloto As String)
+        Dim query As String
+        If (motor = "postgresql") Then
+            query = "INSERT INTO ""avion"" VALUES ('" & codAvion & "','" & modelo & "','" & nombrePiloto & "')"
+        Else
+            query = "INSERT INTO avion(codAvion,modelo,nombrePiloto) VALUES ('" & codAvion & "','" & modelo & "','" & nombrePiloto & "')"
         End If
 
         Dim conexion As New Conexiones(motor)

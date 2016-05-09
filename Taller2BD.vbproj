@@ -119,12 +119,6 @@
     <Compile Include="DespliegueTrabajadores.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.vb">
-      <DependentUpon>Form1.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Form1.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="MenuAdministrador.Designer.vb">
       <DependentUpon>MenuAdministrador.vb</DependentUpon>
     </Compile>
@@ -143,10 +137,10 @@
     <Compile Include="MenuCliente.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MenuTrabajador.Designer.vb">
-      <DependentUpon>MenuTrabajador.vb</DependentUpon>
+    <Compile Include="MenuTrabajadorIngresos.Designer.vb">
+      <DependentUpon>MenuTrabajadorIngresos.vb</DependentUpon>
     </Compile>
-    <Compile Include="MenuTrabajador.vb">
+    <Compile Include="MenuTrabajadorIngresos.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -193,9 +187,6 @@
     <EmbeddedResource Include="DespliegueTrabajadores.resx">
       <DependentUpon>DespliegueTrabajadores.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="MenuAdministrador.resx">
       <DependentUpon>MenuAdministrador.vb</DependentUpon>
     </EmbeddedResource>
@@ -205,8 +196,8 @@
     <EmbeddedResource Include="MenuCliente.resx">
       <DependentUpon>MenuCliente.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MenuTrabajador.resx">
-      <DependentUpon>MenuTrabajador.vb</DependentUpon>
+    <EmbeddedResource Include="MenuTrabajadorIngresos.resx">
+      <DependentUpon>MenuTrabajadorIngresos.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>

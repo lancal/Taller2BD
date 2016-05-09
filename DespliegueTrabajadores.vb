@@ -14,7 +14,10 @@
 
 
     Private Sub DespliegueTrabajadores_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
+        Dim dt As DataTable = consultas.getTablas(motor, "trabajador")
+        dgDespliegueTrabajadores.DataSource = dt
+        dgDespliegueTrabajadores.Columns(0).HeaderText = "rut"
+        dgDespliegueTrabajadores.Columns(1).HeaderText = "tipoTrabajador"
     End Sub
 
     Private Sub btVolver_Click(sender As Object, e As EventArgs) Handles btVolver.Click
@@ -27,9 +30,10 @@
 
     Private Sub dgDespliegueTrabajadores_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgDespliegueTrabajadores.CellContentClick
 
-        dgDespliegueTrabajadores.Show()
-        Dim datos As DataTable
-        datos = consultas.getTablas(Me.motor, "persona")
+        'dgDespliegueTrabajadores.Show()
+        'Dim datos As DataTable
+        'datos = consultas.getTablas(Me.motor, "persona")
+        'dgDespliegueTrabajadores.DataSource = datos
 
     End Sub
 End Class
