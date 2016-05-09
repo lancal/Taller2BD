@@ -46,3 +46,7 @@ C:\Users\acald\Documents\Visual Studio 2015\Projects\Taller2BD\bin\Debug\Taller2
 C:\Users\acald\Documents\Visual Studio 2015\Projects\Taller2BD\obj\Debug\Taller2BD.exe
 C:\Users\acald\Documents\Visual Studio 2015\Projects\Taller2BD\obj\Debug\Taller2BD.xml
 C:\Users\acald\Documents\Visual Studio 2015\Projects\Taller2BD\obj\Debug\Taller2BD.pdb
+C:\Users\RaosF\Documents\Visual Studio 2015\Projects\Taller2BD\bin\Debug\Taller2BD.exe.config
+C:\Users\RaosF\Documents\Visual Studio 2015\Projects\Taller2BD\obj\Debug\Taller2BD.exe
+C:\Users\RaosF\Documents\Visual Studio 2015\Projects\Taller2BD\obj\Debug\Taller2BD.xml
+C:\Users\RaosF\Documents\Visual Studio 2015\Projects\Taller2BD\obj\Debug\Taller2BD.pdb
