@@ -31,6 +31,13 @@
     End Sub
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+        MsgBox("Bienvenido al Menu del Trabajador Para Ingresar Aviones o Vuelo")
+        Dim menutrabajador As New MenuTrabajadorIngresos(Me.motor, Me)
+        menutrabajador.Show()
+        Me.Dispose()
+    End Sub
+
+    Private Sub Trabajador_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
     End Sub
 End Class
