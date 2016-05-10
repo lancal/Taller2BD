@@ -27,6 +27,20 @@
         Return conexion.QueryConRetorno(query)
     End Function
 
+    Public Function getTipoTrabajador(ByVal motor As String, ByVal rut As String, ByVal tabla As String) As DataTable
+        Dim query As String
+        If (motor = "postgresql") Then
+            query = "SELECT tipotrabajador FROM """ & tabla & """ WHERE rut = '" & rut & "';"
+        Else
+            query = "SELECT tipotrabajador FROM " & tabla & " WHERE rut = '" & rut & "';"
+        End If
+        motor = "access"
+        Dim conexion As New Conexiones(motor)
+        Return conexion.QueryConRetorno(query)
+    End Function
+
+
+
     Public Function getAvionPorCodigo(ByVal motor As String, ByVal codigo As String, ByVal tabla As String) As DataTable
         Dim query As String
         If (motor = "postgresql") Then

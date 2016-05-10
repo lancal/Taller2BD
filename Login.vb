@@ -44,16 +44,24 @@
 
 
                 ElseIf (consulta.getUsuarioPorRut(Me.motor, tbuser.Text, "trabajador").Rows.Count > 0) Then
-                    Dim trabajador As New Trabajador(Me.motor, Me)
-                    MsgBox("Bienvenido Trabajador")
-                    trabajador.Show()
-                    Me.Dispose()
+                    If (consulta.getTipoTrabajador(motor, tbuser.Text.ToString(), "trabajador").Equals("Control de Vuelos")) Then
+                        Dim trabajador As New Trabajador(Me.motor, Me)
+                        MsgBox("Bienvenido Trabajador")
+                        trabajador.Show()
+                        Me.Dispose()
+                    Else
+                        'atencion al cliente
+                        Dim atencionAlcliente As New AtencionAlCliente(Me.motor, Me)
+                        MsgBox("Bienvenido Trabajador")
+                        atencionAlcliente.Show()
+                        Me.Dispose()
 
+                    End If
 
                 End If
 
 
-            Else
+                Else
 
 
 
