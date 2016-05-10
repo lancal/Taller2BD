@@ -25,7 +25,6 @@ Partial Class Administrador
         Me.btDesplegarTrabajadores = New System.Windows.Forms.Button()
         Me.btEliminarRuta = New System.Windows.Forms.Button()
         Me.btVolver = New System.Windows.Forms.Button()
-        Me.btSalir = New System.Windows.Forms.Button()
         Me.btEditarTrabajadorOruta = New System.Windows.Forms.Button()
         Me.btIngresarOruta = New System.Windows.Forms.Button()
         Me.SuspendLayout()
@@ -57,15 +56,6 @@ Partial Class Administrador
         Me.btVolver.Text = "Volver"
         Me.btVolver.UseVisualStyleBackColor = True
         '
-        'btSalir
-        '
-        Me.btSalir.Location = New System.Drawing.Point(503, 486)
-        Me.btSalir.Name = "btSalir"
-        Me.btSalir.Size = New System.Drawing.Size(202, 37)
-        Me.btSalir.TabIndex = 12
-        Me.btSalir.Text = "Salir"
-        Me.btSalir.UseVisualStyleBackColor = True
-        '
         'btEditarTrabajadorOruta
         '
         Me.btEditarTrabajadorOruta.Location = New System.Drawing.Point(65, 167)
@@ -91,7 +81,6 @@ Partial Class Administrador
         Me.ClientSize = New System.Drawing.Size(851, 618)
         Me.Controls.Add(Me.btIngresarOruta)
         Me.Controls.Add(Me.btEditarTrabajadorOruta)
-        Me.Controls.Add(Me.btSalir)
         Me.Controls.Add(Me.btVolver)
         Me.Controls.Add(Me.btEliminarRuta)
         Me.Controls.Add(Me.btDesplegarTrabajadores)
@@ -103,7 +92,6 @@ Partial Class Administrador
     Friend WithEvents btDesplegarTrabajadores As Button
     Friend WithEvents btEliminarRuta As Button
     Friend WithEvents btVolver As Button
-    Friend WithEvents btSalir As Button
     Friend WithEvents btEditarTrabajadorOruta As Button
     Friend WithEvents btIngresarOruta As Button
 End Class

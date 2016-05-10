@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class AtencionAlCliente
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,12 +20,11 @@ Partial Class AtencionAlCliente
     'NOTA: el Diseñador de Windows Forms necesita el siguiente procedimiento
     'Se puede modificar usando el Diseñador de Windows Forms.  
     'No lo modifique con el editor de código.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.btIngresarOeditar = New System.Windows.Forms.Button()
         Me.btDesplegarXclientes = New System.Windows.Forms.Button()
         Me.btVolver = New System.Windows.Forms.Button()
-        Me.Button4 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'btIngresarOeditar
@@ -55,21 +54,11 @@ Partial Class AtencionAlCliente
         Me.btVolver.Text = "Volver"
         Me.btVolver.UseVisualStyleBackColor = True
         '
-        'Button4
-        '
-        Me.Button4.Location = New System.Drawing.Point(445, 309)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(199, 37)
-        Me.Button4.TabIndex = 12
-        Me.Button4.Text = "Salir"
-        Me.Button4.UseVisualStyleBackColor = True
-        '
         'AtencionAlCliente
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(994, 626)
-        Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.btVolver)
         Me.Controls.Add(Me.btDesplegarXclientes)
         Me.Controls.Add(Me.btIngresarOeditar)
@@ -81,5 +70,4 @@ Partial Class AtencionAlCliente
     Friend WithEvents btIngresarOeditar As Button
     Friend WithEvents btDesplegarXclientes As Button
     Friend WithEvents btVolver As Button
-    Friend WithEvents Button4 As Button
 End Class
