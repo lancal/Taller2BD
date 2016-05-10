@@ -30,16 +30,14 @@
     Public Function getTipoTrabajador(ByVal motor As String, ByVal rut As String, ByVal tabla As String) As DataTable
         Dim query As String
         If (motor = "postgresql") Then
-            query = "SELECT tipotrabajador FROM """ & tabla & """ WHERE rut = '" & rut & "';"
+            query = "SELECT tipoTrabajador FROM """ & tabla & """ WHERE rut = '" & rut & "';"
         Else
-            query = "SELECT tipotrabajador FROM " & tabla & " WHERE rut = '" & rut & "';"
+            query = "SELECT tipoTrabajador FROM " & tabla & " WHERE rut = '" & rut & "';"
         End If
         motor = "access"
         Dim conexion As New Conexiones(motor)
         Return conexion.QueryConRetorno(query)
     End Function
-
-
 
     Public Function getAvionPorCodigo(ByVal motor As String, ByVal codigo As String, ByVal tabla As String) As DataTable
         Dim query As String
@@ -47,6 +45,18 @@
             query = "SELECT codAvion FROM """ & tabla & """ WHERE codAvion = '" & codigo & "';"
         Else
             query = "SELECT codAvion FROM " & tabla & " WHERE codAvion = '" & codigo & "';"
+        End If
+        motor = "access"
+        Dim conexion As New Conexiones(motor)
+        Return conexion.QueryConRetorno(query)
+    End Function
+
+    Public Function getVueloPorCodigo(ByVal motor As String, ByVal codVuelo As String, ByVal tabla As String) As DataTable
+        Dim query As String
+        If (motor = "postgresql") Then
+            query = "SELECT codVuelo FROM """ & tabla & """ WHERE codVuelo = '" & codVuelo & "';"
+        Else
+            query = "SELECT codVuelo FROM " & tabla & " WHERE codVuelo = '" & codVuelo & "';"
         End If
         motor = "access"
         Dim conexion As New Conexiones(motor)
@@ -122,6 +132,18 @@
             query = "INSERT INTO ""avion"" VALUES ('" & codAvion & "','" & modelo & "','" & nombrePiloto & "')"
         Else
             query = "INSERT INTO avion(codAvion,modelo,nombrePiloto,imagenAvion) VALUES ('" & codAvion & "','" & modelo & "','" & nombrePiloto & "','" & imagenAvion & "')"
+        End If
+
+        Dim conexion As New Conexiones(motor)
+        conexion.QuerySinRetorno(query)
+    End Sub
+
+    Public Sub agregarVuelo(ByVal motor As String, ByVal codVuelo As String, ByVal fecha As Date)
+        Dim query As String
+        If (motor = "postgresql") Then
+            query = "INSERT INTO ""vuelo"" VALUES ('" & codVuelo & "','" & fecha & "')"
+        Else
+            query = "INSERT INTO avion(codVuelo,fecha) VALUES ('" & codVuelo & "','" & fecha & "')"
         End If
 
         Dim conexion As New Conexiones(motor)

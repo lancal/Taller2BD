@@ -47,7 +47,7 @@
 
     End Sub
 
-<<<<<<< HEAD
+
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
         Dim buscarImagen As New OpenFileDialog()
 
@@ -87,7 +87,7 @@
         End Try
         Return True
     End Function
-=======
+
     Private Sub Form_FormClosing(ByVal sender As Object, ByVal e As System.Windows.Forms.FormClosingEventArgs) Handles Me.FormClosing
         Dim response As MsgBoxResult
         response = MsgBox("Desea cerrar la ventana?", MsgBoxStyle.Question + MsgBoxStyle.YesNo, "Confirmar")
@@ -100,5 +100,27 @@
             Exit Sub
         End If
     End Sub
->>>>>>> bc40e79548fd024a743aa1eafbcfb4fa35df2532
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        Dim buscarCodigoVuelo As DataTable
+
+        Try
+
+
+            buscarCodigoVuelo = consulta.getAvionPorCodigo(Me.motor, TbCodigoVuelo.Text, "vuelo")
+            If (buscarCodigoVuelo.Rows.Count > 0) Then
+                MsgBox("Lo siento, ya existe el Vuelo.")
+                Return
+            End If
+
+        Catch ex As Exception
+            MsgBox("No se pudo agregar el Vuelo. " & ex.Message)
+            Return
+        End Try
+
+
+
+        consulta.agregarVuelo(Me.motor, TbCodigoVuelo.Text, TbFechaVuelo.Text)
+        MsgBox("El Avion fue ingresado exitosamente")
+    End Sub
 End Class
