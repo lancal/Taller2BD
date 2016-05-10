@@ -119,6 +119,12 @@
     <Compile Include="DespliegueTrabajadores.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="MenuTrabajadorEdicion.Designer.vb">
+      <DependentUpon>MenuTrabajadorEdicion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MenuTrabajadorEdicion.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="MenuAdministrador.Designer.vb">
       <DependentUpon>MenuAdministrador.vb</DependentUpon>
     </Compile>
@@ -186,6 +192,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="DespliegueTrabajadores.resx">
       <DependentUpon>DespliegueTrabajadores.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuTrabajadorEdicion.resx">
+      <DependentUpon>MenuTrabajadorEdicion.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MenuAdministrador.resx">
       <DependentUpon>MenuAdministrador.vb</DependentUpon>

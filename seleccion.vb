@@ -2,8 +2,11 @@
 
     Private Sub seleccion_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
-
-
+        Me.BackgroundImage = Image.FromFile(CurDir() + "/Imagenes/fondo.png")
+        pbAccess.Image = Image.FromFile(CurDir() + "/imagenes/access.png")
+        pbMysql.Image = Image.FromFile(CurDir() + "/imagenes/mysql.png")
+        pbPostgresql.Image = Image.FromFile(CurDir() + "/imagenes/postgresql.png")
+        pbSql.Image = Image.FromFile(CurDir() + "/imagenes/sqlserver.png")
 
     End Sub
 

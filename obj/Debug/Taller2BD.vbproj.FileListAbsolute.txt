@@ -85,3 +85,4 @@ C:\Users\RaosF\Documents\Visual Studio 2015\Projects\Taller2BD\obj\Debug\Taller2
 C:\Users\RaosF\Documents\Visual Studio 2015\Projects\Taller2BD\obj\Debug\Taller2BD.Trabajador.resources
 C:\Users\RaosF\Documents\Visual Studio 2015\Projects\Taller2BD\obj\Debug\Taller2BD.vbproj.GenerateResource.Cache
 C:\Users\RaosF\Documents\Visual Studio 2015\Projects\Taller2BD\obj\Debug\Taller2BD.MenuTrabajadorIngresos.resources
+C:\Users\RaosF\Documents\Visual Studio 2015\Projects\Taller2BD\obj\Debug\Taller2BD.MenuTrabajadorEdicion.resources
