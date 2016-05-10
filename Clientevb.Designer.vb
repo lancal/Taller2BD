@@ -27,7 +27,6 @@ Partial Class Clientevb
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
-        Me.Button5 = New System.Windows.Forms.Button()
         Me.Button6 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
@@ -75,15 +74,6 @@ Partial Class Clientevb
         Me.Button4.Text = "Cambiar"
         Me.Button4.UseVisualStyleBackColor = True
         '
-        'Button5
-        '
-        Me.Button5.Location = New System.Drawing.Point(354, 351)
-        Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(122, 43)
-        Me.Button5.TabIndex = 5
-        Me.Button5.Text = "Salir"
-        Me.Button5.UseVisualStyleBackColor = True
-        '
         'Button6
         '
         Me.Button6.Location = New System.Drawing.Point(105, 351)
@@ -100,7 +90,6 @@ Partial Class Clientevb
         Me.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.ClientSize = New System.Drawing.Size(753, 496)
         Me.Controls.Add(Me.Button6)
-        Me.Controls.Add(Me.Button5)
         Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)
@@ -117,6 +106,5 @@ Partial Class Clientevb
     Friend WithEvents Button2 As Button
     Friend WithEvents Button3 As Button
     Friend WithEvents Button4 As Button
-    Friend WithEvents Button5 As Button
     Friend WithEvents Button6 As Button
 End Class

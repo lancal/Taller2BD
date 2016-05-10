@@ -137,6 +137,18 @@
     <Compile Include="login.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="MenuAdministrador2.Designer.vb">
+      <DependentUpon>MenuAdministrador2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MenuAdministrador2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuAtencionAlCliente.Designer.vb">
+      <DependentUpon>MenuAtencionAlCliente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MenuAtencionAlCliente.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="MenuCliente.Designer.vb">
       <DependentUpon>MenuCliente.vb</DependentUpon>
     </Compile>
@@ -201,6 +213,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="login.resx">
       <DependentUpon>login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuAdministrador2.resx">
+      <DependentUpon>MenuAdministrador2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuAtencionAlCliente.resx">
+      <DependentUpon>MenuAtencionAlCliente.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MenuCliente.resx">
       <DependentUpon>MenuCliente.vb</DependentUpon>

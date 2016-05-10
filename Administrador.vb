@@ -23,7 +23,8 @@
 
     End Sub
 
-    Private Sub Button1_Click_1(sender As Object, e As EventArgs) Handles btEditarTrabajadorOruta.Click
+    Private Sub btEditarTrabajadorOruta_Click_1(sender As Object, e As EventArgs) Handles btEditarTrabajadorOruta.Click
+
 
     End Sub
 
@@ -53,6 +54,24 @@
         Dim desplegarTrabajadores As New DespliegueTrabajadores(Me.motor, Me)
         desplegarTrabajadores.Show()
         Me.Dispose()
+
+    End Sub
+
+
+    Private Sub Form_FormClosing(ByVal sender As Object, ByVal e As System.Windows.Forms.FormClosingEventArgs) Handles Me.FormClosing
+        Dim response As MsgBoxResult
+        response = MsgBox("Desea cerrar la ventana?", MsgBoxStyle.Question + MsgBoxStyle.YesNo, "Confirmar")
+        If response = MsgBoxResult.Yes Then
+            Me.Dispose()
+            Me.Close()
+            End
+        ElseIf response = MsgBoxResult.No Then
+            e.Cancel = True
+            Exit Sub
+        End If
+    End Sub
+
+    Private Sub Administrador_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
     End Sub
 End Class

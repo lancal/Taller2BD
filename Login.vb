@@ -44,16 +44,24 @@
 
 
                 ElseIf (consulta.getUsuarioPorRut(Me.motor, tbuser.Text, "trabajador").Rows.Count > 0) Then
-                    Dim trabajador As New Trabajador(Me.motor, Me)
-                    MsgBox("Bienvenido Trabajador")
-                    trabajador.Show()
-                    Me.Dispose()
+                    If (consulta.getTipoTrabajador(motor, tbuser.Text.ToString(), "trabajador").Equals("Control de Vuelos")) Then
+                        Dim trabajador As New Trabajador(Me.motor, Me)
+                        MsgBox("Bienvenido Trabajador")
+                        trabajador.Show()
+                        Me.Dispose()
+                    Else
+                        'atencion al cliente
+                        Dim atencionAlcliente As New AtencionAlCliente(Me.motor, Me)
+                        MsgBox("Bienvenido Trabajador")
+                        atencionAlcliente.Show()
+                        Me.Dispose()
 
+                    End If
 
                 End If
 
 
-            Else
+                Else
 
 
 
@@ -84,5 +92,18 @@
         Me.Dispose()
 
 
+    End Sub
+
+    Private Sub Form_FormClosing(ByVal sender As Object, ByVal e As System.Windows.Forms.FormClosingEventArgs) Handles Me.FormClosing
+        Dim response As MsgBoxResult
+        response = MsgBox("Desea cerrar la ventana?", MsgBoxStyle.Question + MsgBoxStyle.YesNo, "Confirmar")
+        If response = MsgBoxResult.Yes Then
+            Me.Dispose()
+            Me.Close()
+            End
+        ElseIf response = MsgBoxResult.No Then
+            e.Cancel = True
+            Exit Sub
+        End If
     End Sub
 End Class

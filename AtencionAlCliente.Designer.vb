@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class AtencionAlCliente
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,66 +20,54 @@ Partial Class AtencionAlCliente
     'NOTA: el Diseñador de Windows Forms necesita el siguiente procedimiento
     'Se puede modificar usando el Diseñador de Windows Forms.  
     'No lo modifique con el editor de código.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
-        Me.Button6 = New System.Windows.Forms.Button()
-        Me.Button4 = New System.Windows.Forms.Button()
+        Me.btIngresarOeditar = New System.Windows.Forms.Button()
+        Me.btDesplegarXclientes = New System.Windows.Forms.Button()
+        Me.btVolver = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
-        'Button1
+        'btIngresarOeditar
         '
-        Me.Button1.Location = New System.Drawing.Point(66, 42)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(578, 37)
-        Me.Button1.TabIndex = 1
-        Me.Button1.Text = "Ingresar o Editar Reserva"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.btIngresarOeditar.Location = New System.Drawing.Point(66, 42)
+        Me.btIngresarOeditar.Name = "btIngresarOeditar"
+        Me.btIngresarOeditar.Size = New System.Drawing.Size(578, 37)
+        Me.btIngresarOeditar.TabIndex = 1
+        Me.btIngresarOeditar.Text = "Ingresar o Editar Reserva"
+        Me.btIngresarOeditar.UseVisualStyleBackColor = True
         '
-        'Button3
+        'btDesplegarXclientes
         '
-        Me.Button3.Location = New System.Drawing.Point(66, 147)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(578, 46)
-        Me.Button3.TabIndex = 3
-        Me.Button3.Text = "Despliegue por clientes"
-        Me.Button3.UseVisualStyleBackColor = True
+        Me.btDesplegarXclientes.Location = New System.Drawing.Point(66, 147)
+        Me.btDesplegarXclientes.Name = "btDesplegarXclientes"
+        Me.btDesplegarXclientes.Size = New System.Drawing.Size(578, 46)
+        Me.btDesplegarXclientes.TabIndex = 3
+        Me.btDesplegarXclientes.Text = "Despliegue por clientes"
+        Me.btDesplegarXclientes.UseVisualStyleBackColor = True
         '
-        'Button6
+        'btVolver
         '
-        Me.Button6.Location = New System.Drawing.Point(66, 309)
-        Me.Button6.Name = "Button6"
-        Me.Button6.Size = New System.Drawing.Size(199, 37)
-        Me.Button6.TabIndex = 11
-        Me.Button6.Text = "Volver"
-        Me.Button6.UseVisualStyleBackColor = True
-        '
-        'Button4
-        '
-        Me.Button4.Location = New System.Drawing.Point(445, 309)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(199, 37)
-        Me.Button4.TabIndex = 12
-        Me.Button4.Text = "Salir"
-        Me.Button4.UseVisualStyleBackColor = True
+        Me.btVolver.Location = New System.Drawing.Point(66, 309)
+        Me.btVolver.Name = "btVolver"
+        Me.btVolver.Size = New System.Drawing.Size(199, 37)
+        Me.btVolver.TabIndex = 11
+        Me.btVolver.Text = "Volver"
+        Me.btVolver.UseVisualStyleBackColor = True
         '
         'AtencionAlCliente
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(994, 626)
-        Me.Controls.Add(Me.Button4)
-        Me.Controls.Add(Me.Button6)
-        Me.Controls.Add(Me.Button3)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.btVolver)
+        Me.Controls.Add(Me.btDesplegarXclientes)
+        Me.Controls.Add(Me.btIngresarOeditar)
         Me.Name = "AtencionAlCliente"
         Me.Text = "Atencion Al Cliente"
         Me.ResumeLayout(False)
 
     End Sub
-    Friend WithEvents Button1 As Button
-    Friend WithEvents Button3 As Button
-    Friend WithEvents Button6 As Button
-    Friend WithEvents Button4 As Button
+    Friend WithEvents btIngresarOeditar As Button
+    Friend WithEvents btDesplegarXclientes As Button
+    Friend WithEvents btVolver As Button
 End Class

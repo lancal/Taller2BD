@@ -1,4 +1,4 @@
-﻿Public Class AtencionAlCliente
+﻿Public Class MenuAtencionAlCliente
 
     Dim motor As String
     Dim consulta As New Consultas
@@ -12,29 +12,7 @@
 
     End Sub
 
-    Private Sub Button4_Click(sender As Object, e As EventArgs)
-
-    End Sub
-
-    Private Sub btIngresarOeditar_Click(sender As Object, e As EventArgs) Handles btIngresarOeditar.Click
-
-        MsgBox("Bienvenido al Menu Atenciion al Cliente")
-        Dim menuAtencion As New MenuAtencionAlCliente(Me.motor, Me)
-        menuAtencion.Show()
-        Me.Dispose()
-
-
-    End Sub
-
-    Private Sub btVolver_Click(sender As Object, e As EventArgs) Handles btVolver.Click
-
-        Dim volverLogin As New login(Me.motor, Me)
-        volverLogin.Show()
-        Me.Dispose()
-
-    End Sub
-
-    Private Sub AtencionAlCliente_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+    Private Sub MenuAtencionAlCliente_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
     End Sub
 
@@ -50,5 +28,4 @@
             Exit Sub
         End If
     End Sub
-
 End Class
