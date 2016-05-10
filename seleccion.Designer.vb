@@ -34,45 +34,50 @@ Partial Class seleccion
         '
         'pbAccess
         '
-        Me.pbAccess.Location = New System.Drawing.Point(61, 148)
+        Me.pbAccess.Location = New System.Drawing.Point(9, 143)
+        Me.pbAccess.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.pbAccess.Name = "pbAccess"
-        Me.pbAccess.Size = New System.Drawing.Size(153, 180)
+        Me.pbAccess.Size = New System.Drawing.Size(119, 117)
         Me.pbAccess.TabIndex = 0
         Me.pbAccess.TabStop = False
         '
         'pbMysql
         '
-        Me.pbMysql.Location = New System.Drawing.Point(233, 148)
+        Me.pbMysql.Location = New System.Drawing.Point(145, 143)
+        Me.pbMysql.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.pbMysql.Name = "pbMysql"
-        Me.pbMysql.Size = New System.Drawing.Size(153, 180)
+        Me.pbMysql.Size = New System.Drawing.Size(123, 117)
         Me.pbMysql.TabIndex = 1
         Me.pbMysql.TabStop = False
         '
         'pbPostgresql
         '
-        Me.pbPostgresql.Location = New System.Drawing.Point(405, 148)
+        Me.pbPostgresql.Location = New System.Drawing.Point(286, 143)
+        Me.pbPostgresql.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.pbPostgresql.Name = "pbPostgresql"
-        Me.pbPostgresql.Size = New System.Drawing.Size(153, 180)
+        Me.pbPostgresql.Size = New System.Drawing.Size(122, 117)
         Me.pbPostgresql.TabIndex = 2
         Me.pbPostgresql.TabStop = False
         '
         'pbSql
         '
-        Me.pbSql.Location = New System.Drawing.Point(577, 148)
+        Me.pbSql.Location = New System.Drawing.Point(427, 143)
+        Me.pbSql.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.pbSql.Name = "pbSql"
-        Me.pbSql.Size = New System.Drawing.Size(153, 180)
+        Me.pbSql.Size = New System.Drawing.Size(125, 117)
         Me.pbSql.TabIndex = 3
         Me.pbSql.TabStop = False
         '
         'seleccion
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(758, 524)
+        Me.ClientSize = New System.Drawing.Size(569, 295)
         Me.Controls.Add(Me.pbSql)
         Me.Controls.Add(Me.pbPostgresql)
         Me.Controls.Add(Me.pbMysql)
         Me.Controls.Add(Me.pbAccess)
+        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Name = "seleccion"
         Me.Text = "seleccion"
         CType(Me.pbAccess, System.ComponentModel.ISupportInitialize).EndInit()
