@@ -23,7 +23,8 @@
 
     End Sub
 
-    Private Sub Button1_Click_1(sender As Object, e As EventArgs) Handles btEditarTrabajadorOruta.Click
+    Private Sub btEditarTrabajadorOruta_Click_1(sender As Object, e As EventArgs) Handles btEditarTrabajadorOruta.Click
+
 
     End Sub
 
