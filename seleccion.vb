@@ -17,21 +17,30 @@
     End Sub
 
     Private Sub pbMysql_Click(sender As Object, e As EventArgs) Handles pbMysql.Click
-        Dim login As New login("mysql", Me)
-        login.Show()
-        Me.Hide()
+
+        MsgBox("Estamos trabajando para Usted, prontamente estara implementada esta funcion", MsgBoxStyle.Exclamation, "Updating!")
+
+        'Dim login As New login("mysql", Me)
+        'login.Show()
+        'Me.Hide()
     End Sub
 
     Private Sub pbPostgresql_Click(sender As Object, e As EventArgs) Handles pbPostgresql.Click
-        Dim login As New login("postgresql", Me)
-        login.Show()
-        Me.Hide()
+
+        MsgBox("Estamos trabajando para Usted, prontamente estara implementada esta funcion", MsgBoxStyle.Exclamation, "Updating!")
+
+        'Dim login As New login("postgresql", Me)
+        'login.Show()
+        'Me.Hide()
     End Sub
 
     Private Sub pbSqlserver_Click(sender As Object, e As EventArgs) Handles pbSql.Click
-        Dim login As New login("sqlserver", Me)
-        login.Show()
-        Me.Hide()
+
+        MsgBox("Estamos trabajando para Usted, prontamente estara implementada esta funcion", MsgBoxStyle.Exclamation, "Updating!")
+
+        'Dim login As New login("sqlserver", Me)
+        'login.Show()
+        'Me.Hide()
     End Sub
 
     Private Sub Form_FormClosing(ByVal sender As Object, ByVal e As System.Windows.Forms.FormClosingEventArgs) Handles Me.FormClosing

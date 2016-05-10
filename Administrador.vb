@@ -24,7 +24,11 @@
     End Sub
 
     Private Sub btEditarTrabajadorOruta_Click_1(sender As Object, e As EventArgs) Handles btEditarTrabajadorOruta.Click
-
+        MsgBox("Estamos trabajando para Usted, prontamente estara implementada esta funcion", MsgBoxStyle.Exclamation, "Updating!")
+        'MsgBox("Bienvenido al Menu del Administrador")
+        'Dim menuadmin As New MenuAdministrador2(Me.motor, Me)
+        'menuadmin.Show()
+        'Me.Dispose()
 
     End Sub
 
@@ -72,6 +76,11 @@
     End Sub
 
     Private Sub Administrador_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
+
+    Private Sub btEliminarRuta_Click(sender As Object, e As EventArgs) Handles btEliminarRuta.Click
+        MsgBox("Estamos trabajando para Usted, prontamente estara implementada esta funcion", MsgBoxStyle.Exclamation, "Updating!")
 
     End Sub
 End Class
