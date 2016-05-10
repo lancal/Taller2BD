@@ -90,5 +90,8 @@ C:\Users\acald\Documents\Visual Studio 2015\Projects\Taller2BD\obj\Debug\Taller2
 C:\Users\acald\Documents\Visual Studio 2015\Projects\Taller2BD\obj\Debug\Taller2BD.MenuAtencionAlCliente.resources
 C:\Users\acald\Documents\Visual Studio 2015\Projects\Taller2BD\obj\Debug\Taller2BD.MenuAdministrador2.resources
 >>>>>>> bc40e79548fd024a743aa1eafbcfb4fa35df2532
+C:\Users\RaosF\Documents\Visual Studio 2015\Projects\Taller2BD\obj\Debug\Taller2BD.MenuAdministrador2.resources
+C:\Users\RaosF\Documents\Visual Studio 2015\Projects\Taller2BD\obj\Debug\Taller2BD.MenuAtencionAlCliente.resources
 >>>>>>> 58401039d210690f024c5d60563eaabd5de192f6
 C:\Users\acald\Documents\Visual Studio 2015\Projects\Taller2BD\obj\Debug\Taller2BD.MenuTrabajadorEdicion.resources
+>>>>>>> 4405f2a5257daf5f2f1dd116bb0dd7bd71e866a6

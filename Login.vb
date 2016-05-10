@@ -38,23 +38,26 @@
 
 
 
-                    'verificar a que tipo de usuario corresponde en el sistema
-                    If (consulta.getUsuarioPorRut(Me.motor, tbuser.Text, "administrador").Rows.Count > 0) Then
-                        Dim admin As New Administrador(Me.motor, Me)
-                        MsgBox("Bienvenido Administrador")
-                        admin.Show()
+                'verificar a que tipo de usuario corresponde en el sistema
+                If (consulta.getUsuarioPorRut(Me.motor, tbuser.Text, "administrador").Rows.Count > 0) Then
+                    Dim admin As New Administrador(Me.motor, Me)
+                    MsgBox("Bienvenido Administrador")
+                    admin.Show()
+                    Me.Dispose()
+
+
+                ElseIf (consulta.getUsuarioPorRut(Me.motor, tbuser.Text, "trabajador").Rows.Count > 0) Then
+                    'MsgBox("pesco")
+                    Dim asd As DataTable = consulta.getTipoTrabajador(Me.motor, tbuser.Text, "trabajador")
+
+                    If (asd.Rows(0).Item(0).Equals("Contralador de vuelo")) Then
+                        Dim trabajador As New Trabajador(Me.motor, Me)
+                        MsgBox("Bienvenido Trabajador")
+                        trabajador.Show()
                         Me.Dispose()
-
-
-                    ElseIf (consulta.getUsuarioPorRut(Me.motor, tbuser.Text, "trabajador").Rows.Count > 0) Then
-                        If (consulta.getTipoTrabajador(motor, tbuser.Text.ToString(), "trabajador").Equals("Control de Vuelos")) Then
-                            Dim trabajador As New Trabajador(Me.motor, Me)
-                            MsgBox("Bienvenido Trabajador")
-                            trabajador.Show()
-                            Me.Dispose()
-                        Else
-                            'atencion al cliente
-                            Dim atencionAlcliente As New AtencionAlCliente(Me.motor, Me)
+                    Else
+                        'atencion al cliente
+                        Dim atencionAlcliente As New AtencionAlCliente(Me.motor, Me)
                             MsgBox("Bienvenido Trabajador")
                             atencionAlcliente.Show()
                             Me.Dispose()

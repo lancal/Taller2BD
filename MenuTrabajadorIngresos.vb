@@ -101,4 +101,26 @@
         End If
     End Sub
 
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        Dim buscarCodigoVuelo As DataTable
+
+        Try
+
+
+            buscarCodigoVuelo = consulta.getAvionPorCodigo(Me.motor, TbCodigoVuelo.Text, "vuelo")
+            If (buscarCodigoVuelo.Rows.Count > 0) Then
+                MsgBox("Lo siento, ya existe el Vuelo.")
+                Return
+            End If
+
+        Catch ex As Exception
+            MsgBox("No se pudo agregar el Vuelo. " & ex.Message)
+            Return
+        End Try
+
+
+
+        consulta.agregarVuelo(Me.motor, TbCodigoVuelo.Text, TbFechaVuelo.Text)
+        MsgBox("El Avion fue ingresado exitosamente")
+    End Sub
 End Class
