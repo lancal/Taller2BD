@@ -11,7 +11,7 @@ Public Class Mysql
 
     Public Sub New()
 
-        conexion.ConnectionString = "Server=svnserver.disc.ucn.cl;user id=cuenta12; password=cu04sy5AVjyyQLL;Database=dbBD12IIsemestre2015;"
+        conexion.ConnectionString = "Server=svnserver.disc.ucn.cl;user id=userig03; password=fO3ty9DT80;Database=dbuser03;"
     End Sub
 
     Public Function adap(ByVal comando As MySqlCommand) As MySqlDataAdapter

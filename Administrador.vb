@@ -25,6 +25,10 @@
 
     Private Sub btEditarTrabajadorOruta_Click_1(sender As Object, e As EventArgs) Handles btEditarTrabajadorOruta.Click
 
+        MsgBox("Bienvenido al Sistema de Edicion de Trabajadores y Rutas")
+        Dim menuadmin As New MenuAdministrador2(Me.motor, Me)
+        menuadmin.Show()
+        Me.Dispose()
 
     End Sub
 
@@ -73,5 +77,12 @@
 
     Private Sub Administrador_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
+    End Sub
+
+    Private Sub btEliminarRuta_Click(sender As Object, e As EventArgs) Handles btEliminarRuta.Click
+        MsgBox("Eliminar una ruta afecta a los datos asociados como vuelos y reserva", MsgBoxStyle.Exclamation, "Precaucion!!")
+        Dim eliminarRutas As New eliminarRuta(Me.motor, Me)
+        eliminarRutas.Show()
+        Me.Dispose()
     End Sub
 End Class

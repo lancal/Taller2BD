@@ -35,7 +35,10 @@
     End Sub
 
     Private Sub btIngresar_Click(sender As Object, e As EventArgs) Handles btIngresar.Click
-
+        If (verificarCamposBlancos()) Then
+            MsgBox("Debe rellenar todos los campos antes de continuar")
+            Return
+        End If
 
 
         Dim buscarRut As DataTable
@@ -118,4 +121,63 @@
             Exit Sub
         End If
     End Sub
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+
+    End Sub
+
+    Private Sub BingresarRuta_Click(sender As Object, e As EventArgs) Handles BingresarRuta.Click
+        If (verificarCamposBlancos2()) Then
+            MsgBox("Debe rellenar todos los campos antes de continuar")
+            Return
+        End If
+        Dim buscarRuta As DataTable
+
+        Try
+
+
+            buscarRuta = consulta.getRuta(Me.motor, TBcodRuta.Text, "ruta")
+            If (buscarRuta.Rows.Count > 0) Then
+                MsgBox("Lo siento, ya existe esta ruta")
+                Return
+            End If
+
+        Catch ex As Exception
+            MsgBox("No se pudo agregar la ruta. " & ex.Message)
+            Return
+        End Try
+
+        Try
+            consulta.agregarRuta(Me.motor, TBcodRuta.Text, TBciuOri.Text, TBciuDes.Text, TBvalor.Text)
+        Catch ex As Exception
+            MsgBox("No se pudo agregar la ruta. " & ex.Message)
+            Return
+        End Try
+
+        MsgBox("La ruta fue ingresada exitosamente")
+    End Sub
+
+    Public Function verificarCamposBlancos()
+        Dim vacios As Boolean
+        vacios = tbNombre.Text = "" Or tbapPat.Text = "" Or tbapMat.Text = ""
+        vacios = vacios Or tbRut.Text = "" Or tbEdad.Text = "" Or lbtelefonos.Items.Count = 0
+        vacios = vacios Or tbCorreo.Text = "" Or tbclave.Text = "" Or tbTipoTrabajador.Text = ""
+        If (vacios) Then
+            Return True
+        End If
+        Return False
+
+    End Function
+
+    Public Function verificarCamposBlancos2()
+        Dim vacios As Boolean
+        vacios = TBcodRuta.Text = "" Or TBciuOri.Text = "" Or TBciuDes.Text = ""
+        vacios = vacios Or TBvalor.Text = ""
+        If (vacios) Then
+            Return True
+        End If
+        Return False
+
+    End Function
+
 End Class

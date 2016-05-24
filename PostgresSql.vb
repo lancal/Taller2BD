@@ -8,7 +8,7 @@ Public Class PostgresSql
     Private adaptador As NpgsqlDataAdapter
 
     Public Sub New()
-        conexion.ConnectionString = "Server=svnserver.disc.ucn.cl;Port=5432;Database=dbuser12;User Id=user12;Password=BNNeF46dTm"
+        conexion.ConnectionString = "Server=svnserver.disc.ucn.cl;Port=5432;Database=dbuser03;User Id=userig03;Password=fO3ty9DT80"
     End Sub
 
     Public Function adap(ByVal comando As NpgsqlCommand) As NpgsqlDataAdapter

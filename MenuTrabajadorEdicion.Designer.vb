@@ -23,50 +23,61 @@ Partial Class MenuTrabajadorEdicion
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.TBbuscarcodigo = New System.Windows.Forms.TextBox()
-        Me.Bbuscar = New System.Windows.Forms.Button()
+        Me.TbCodAvion = New System.Windows.Forms.TextBox()
+        Me.BbuscarAvion = New System.Windows.Forms.Button()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
+        Me.tbCodigoAvion = New System.Windows.Forms.TextBox()
+        Me.tbModelo = New System.Windows.Forms.TextBox()
+        Me.tbPiloto = New System.Windows.Forms.TextBox()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.pbFotoAvion = New System.Windows.Forms.PictureBox()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.BbuscarVuelo = New System.Windows.Forms.Button()
+        Me.TbCodVuelo = New System.Windows.Forms.TextBox()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.Label10 = New System.Windows.Forms.Label()
+        Me.tbCodigoVuelo = New System.Windows.Forms.TextBox()
+        Me.dtpFechaVuelo = New System.Windows.Forms.DateTimePicker()
+        Me.Button4 = New System.Windows.Forms.Button()
+        Me.Button1 = New System.Windows.Forms.Button()
+        CType(Me.pbFotoAvion, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(55, 20)
+        Me.Label1.Location = New System.Drawing.Point(66, 35)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(111, 13)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Ingrese Codigo Avion:"
         '
-        'TBbuscarcodigo
+        'TbCodAvion
         '
-        Me.TBbuscarcodigo.Location = New System.Drawing.Point(58, 46)
-        Me.TBbuscarcodigo.Name = "TBbuscarcodigo"
-        Me.TBbuscarcodigo.Size = New System.Drawing.Size(100, 20)
-        Me.TBbuscarcodigo.TabIndex = 1
+        Me.TbCodAvion.Location = New System.Drawing.Point(69, 58)
+        Me.TbCodAvion.Name = "TbCodAvion"
+        Me.TbCodAvion.Size = New System.Drawing.Size(100, 20)
+        Me.TbCodAvion.TabIndex = 1
         '
-        'Bbuscar
+        'BbuscarAvion
         '
-        Me.Bbuscar.Location = New System.Drawing.Point(69, 82)
-        Me.Bbuscar.Name = "Bbuscar"
-        Me.Bbuscar.Size = New System.Drawing.Size(75, 23)
-        Me.Bbuscar.TabIndex = 2
-        Me.Bbuscar.Text = "Buscar"
-        Me.Bbuscar.UseVisualStyleBackColor = True
+        Me.BbuscarAvion.Location = New System.Drawing.Point(78, 84)
+        Me.BbuscarAvion.Name = "BbuscarAvion"
+        Me.BbuscarAvion.Size = New System.Drawing.Size(79, 23)
+        Me.BbuscarAvion.TabIndex = 2
+        Me.BbuscarAvion.Text = "Buscar Avion"
+        Me.BbuscarAvion.UseVisualStyleBackColor = True
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(12, 130)
+        Me.Label2.Location = New System.Drawing.Point(12, 138)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(43, 13)
         Me.Label2.TabIndex = 3
@@ -84,32 +95,35 @@ Partial Class MenuTrabajadorEdicion
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(12, 219)
+        Me.Label4.Location = New System.Drawing.Point(12, 207)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(93, 13)
         Me.Label4.TabIndex = 5
         Me.Label4.Text = "Nombre del Piloto:"
         '
-        'TextBox2
+        'tbCodigoAvion
         '
-        Me.TextBox2.Location = New System.Drawing.Point(111, 127)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox2.TabIndex = 6
+        Me.tbCodigoAvion.Enabled = False
+        Me.tbCodigoAvion.Location = New System.Drawing.Point(111, 135)
+        Me.tbCodigoAvion.Name = "tbCodigoAvion"
+        Me.tbCodigoAvion.Size = New System.Drawing.Size(100, 20)
+        Me.tbCodigoAvion.TabIndex = 6
         '
-        'TextBox3
+        'tbModelo
         '
-        Me.TextBox3.Location = New System.Drawing.Point(111, 171)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox3.TabIndex = 7
+        Me.tbModelo.Enabled = False
+        Me.tbModelo.Location = New System.Drawing.Point(111, 171)
+        Me.tbModelo.Name = "tbModelo"
+        Me.tbModelo.Size = New System.Drawing.Size(100, 20)
+        Me.tbModelo.TabIndex = 7
         '
-        'TextBox4
+        'tbPiloto
         '
-        Me.TextBox4.Location = New System.Drawing.Point(111, 216)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox4.TabIndex = 8
+        Me.tbPiloto.Enabled = False
+        Me.tbPiloto.Location = New System.Drawing.Point(111, 204)
+        Me.tbPiloto.Name = "tbPiloto"
+        Me.tbPiloto.Size = New System.Drawing.Size(100, 20)
+        Me.tbPiloto.TabIndex = 8
         '
         'Label5
         '
@@ -120,13 +134,13 @@ Partial Class MenuTrabajadorEdicion
         Me.Label5.TabIndex = 9
         Me.Label5.Text = "Foto:"
         '
-        'PictureBox1
+        'pbFotoAvion
         '
-        Me.PictureBox1.Location = New System.Drawing.Point(15, 264)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(153, 99)
-        Me.PictureBox1.TabIndex = 10
-        Me.PictureBox1.TabStop = False
+        Me.pbFotoAvion.Location = New System.Drawing.Point(15, 264)
+        Me.pbFotoAvion.Name = "pbFotoAvion"
+        Me.pbFotoAvion.Size = New System.Drawing.Size(153, 99)
+        Me.pbFotoAvion.TabIndex = 10
+        Me.pbFotoAvion.TabStop = False
         '
         'Button2
         '
@@ -139,50 +153,171 @@ Partial Class MenuTrabajadorEdicion
         '
         'Button3
         '
-        Me.Button3.Location = New System.Drawing.Point(93, 383)
+        Me.Button3.Location = New System.Drawing.Point(84, 383)
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(75, 23)
+        Me.Button3.Size = New System.Drawing.Size(93, 23)
         Me.Button3.TabIndex = 12
-        Me.Button3.Text = "Modificar"
+        Me.Button3.Text = "Modificar Avion"
         Me.Button3.UseVisualStyleBackColor = True
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.Location = New System.Drawing.Point(12, 9)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(116, 13)
+        Me.Label6.TabIndex = 13
+        Me.Label6.Text = "Edicion de Aviones"
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Location = New System.Drawing.Point(368, 35)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(111, 13)
+        Me.Label7.TabIndex = 14
+        Me.Label7.Text = "Ingrese Codigo Vuelo:"
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label8.Location = New System.Drawing.Point(324, 9)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(109, 13)
+        Me.Label8.TabIndex = 15
+        Me.Label8.Text = "Edicion de Vuelos"
+        '
+        'BbuscarVuelo
+        '
+        Me.BbuscarVuelo.Location = New System.Drawing.Point(380, 84)
+        Me.BbuscarVuelo.Name = "BbuscarVuelo"
+        Me.BbuscarVuelo.Size = New System.Drawing.Size(81, 23)
+        Me.BbuscarVuelo.TabIndex = 16
+        Me.BbuscarVuelo.Text = "Buscar Vuelo"
+        Me.BbuscarVuelo.UseVisualStyleBackColor = True
+        '
+        'TbCodVuelo
+        '
+        Me.TbCodVuelo.Location = New System.Drawing.Point(371, 58)
+        Me.TbCodVuelo.Name = "TbCodVuelo"
+        Me.TbCodVuelo.Size = New System.Drawing.Size(100, 20)
+        Me.TbCodVuelo.TabIndex = 17
+        '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.Location = New System.Drawing.Point(281, 137)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(43, 13)
+        Me.Label9.TabIndex = 18
+        Me.Label9.Text = "Codigo:"
+        '
+        'Label10
+        '
+        Me.Label10.AutoSize = True
+        Me.Label10.Location = New System.Drawing.Point(281, 173)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(70, 13)
+        Me.Label10.TabIndex = 19
+        Me.Label10.Text = "Fecha Vuelo:"
+        '
+        'tbCodigoVuelo
+        '
+        Me.tbCodigoVuelo.Enabled = False
+        Me.tbCodigoVuelo.Location = New System.Drawing.Point(358, 130)
+        Me.tbCodigoVuelo.Name = "tbCodigoVuelo"
+        Me.tbCodigoVuelo.Size = New System.Drawing.Size(133, 20)
+        Me.tbCodigoVuelo.TabIndex = 20
+        '
+        'dtpFechaVuelo
+        '
+        Me.dtpFechaVuelo.Enabled = False
+        Me.dtpFechaVuelo.Location = New System.Drawing.Point(358, 167)
+        Me.dtpFechaVuelo.Name = "dtpFechaVuelo"
+        Me.dtpFechaVuelo.Size = New System.Drawing.Size(133, 20)
+        Me.dtpFechaVuelo.TabIndex = 21
+        '
+        'Button4
+        '
+        Me.Button4.Location = New System.Drawing.Point(371, 207)
+        Me.Button4.Name = "Button4"
+        Me.Button4.Size = New System.Drawing.Size(93, 23)
+        Me.Button4.TabIndex = 22
+        Me.Button4.Text = "Modifcar Vuelo"
+        Me.Button4.UseVisualStyleBackColor = True
+        '
+        'Button1
+        '
+        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.ForeColor = System.Drawing.Color.DodgerBlue
+        Me.Button1.Location = New System.Drawing.Point(373, 383)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(91, 23)
+        Me.Button1.TabIndex = 23
+        Me.Button1.Text = "Volver"
+        Me.Button1.UseVisualStyleBackColor = True
         '
         'MenuTrabajadorEdicion
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(606, 418)
+        Me.ClientSize = New System.Drawing.Size(538, 418)
+        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.Button4)
+        Me.Controls.Add(Me.dtpFechaVuelo)
+        Me.Controls.Add(Me.tbCodigoVuelo)
+        Me.Controls.Add(Me.Label10)
+        Me.Controls.Add(Me.Label9)
+        Me.Controls.Add(Me.TbCodVuelo)
+        Me.Controls.Add(Me.BbuscarVuelo)
+        Me.Controls.Add(Me.Label8)
+        Me.Controls.Add(Me.Label7)
+        Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.PictureBox1)
+        Me.Controls.Add(Me.pbFotoAvion)
         Me.Controls.Add(Me.Label5)
-        Me.Controls.Add(Me.TextBox4)
-        Me.Controls.Add(Me.TextBox3)
-        Me.Controls.Add(Me.TextBox2)
+        Me.Controls.Add(Me.tbPiloto)
+        Me.Controls.Add(Me.tbModelo)
+        Me.Controls.Add(Me.tbCodigoAvion)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.Bbuscar)
-        Me.Controls.Add(Me.TBbuscarcodigo)
+        Me.Controls.Add(Me.BbuscarAvion)
+        Me.Controls.Add(Me.TbCodAvion)
         Me.Controls.Add(Me.Label1)
         Me.Name = "MenuTrabajadorEdicion"
         Me.Text = "Edicion de Aviones y Vuelos"
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pbFotoAvion, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
 
     Friend WithEvents Label1 As Label
-    Friend WithEvents TBbuscarcodigo As TextBox
-    Friend WithEvents Bbuscar As Button
+    Friend WithEvents TbCodAvion As TextBox
+    Friend WithEvents BbuscarAvion As Button
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents Label4 As Label
-    Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents TextBox3 As TextBox
-    Friend WithEvents TextBox4 As TextBox
+    Friend WithEvents tbCodigoAvion As TextBox
+    Friend WithEvents tbModelo As TextBox
+    Friend WithEvents tbPiloto As TextBox
     Friend WithEvents Label5 As Label
-    Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents pbFotoAvion As PictureBox
     Friend WithEvents Button2 As Button
     Friend WithEvents Button3 As Button
+    Friend WithEvents Label6 As Label
+    Friend WithEvents Label7 As Label
+    Friend WithEvents Label8 As Label
+    Friend WithEvents BbuscarVuelo As Button
+    Friend WithEvents TbCodVuelo As TextBox
+    Friend WithEvents Label9 As Label
+    Friend WithEvents Label10 As Label
+    Friend WithEvents tbCodigoVuelo As TextBox
+    Friend WithEvents dtpFechaVuelo As DateTimePicker
+    Friend WithEvents Button4 As Button
+    Friend WithEvents Button1 As Button
 End Class

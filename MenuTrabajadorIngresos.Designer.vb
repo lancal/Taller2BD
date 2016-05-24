@@ -33,12 +33,13 @@ Partial Class MenuTrabajadorIngresos
         Me.TbModeloAvion = New System.Windows.Forms.TextBox()
         Me.TbNombrePiloto = New System.Windows.Forms.TextBox()
         Me.TbCodigoVuelo = New System.Windows.Forms.TextBox()
-        Me.TbFechaVuelo = New System.Windows.Forms.TextBox()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.PbAvion = New System.Windows.Forms.PictureBox()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
+        Me.dtpfechaVuelo = New System.Windows.Forms.DateTimePicker()
+        Me.Button4 = New System.Windows.Forms.Button()
         CType(Me.PbAvion, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -81,7 +82,7 @@ Partial Class MenuTrabajadorIngresos
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(354, 20)
+        Me.Label5.Location = New System.Drawing.Point(343, 20)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(92, 13)
         Me.Label5.TabIndex = 4
@@ -99,7 +100,7 @@ Partial Class MenuTrabajadorIngresos
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(281, 63)
+        Me.Label7.Location = New System.Drawing.Point(263, 63)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(43, 13)
         Me.Label7.TabIndex = 6
@@ -128,22 +129,15 @@ Partial Class MenuTrabajadorIngresos
         '
         'TbCodigoVuelo
         '
-        Me.TbCodigoVuelo.Location = New System.Drawing.Point(357, 60)
+        Me.TbCodigoVuelo.Location = New System.Drawing.Point(327, 60)
         Me.TbCodigoVuelo.Name = "TbCodigoVuelo"
-        Me.TbCodigoVuelo.Size = New System.Drawing.Size(100, 20)
+        Me.TbCodigoVuelo.Size = New System.Drawing.Size(165, 20)
         Me.TbCodigoVuelo.TabIndex = 10
-        '
-        'TbFechaVuelo
-        '
-        Me.TbFechaVuelo.Location = New System.Drawing.Point(357, 95)
-        Me.TbFechaVuelo.Name = "TbFechaVuelo"
-        Me.TbFechaVuelo.Size = New System.Drawing.Size(100, 20)
-        Me.TbFechaVuelo.TabIndex = 11
         '
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(281, 98)
+        Me.Label8.Location = New System.Drawing.Point(266, 98)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(40, 13)
         Me.Label8.TabIndex = 12
@@ -184,17 +178,36 @@ Partial Class MenuTrabajadorIngresos
         Me.Button3.Text = "Subir Imagen"
         Me.Button3.UseVisualStyleBackColor = True
         '
+        'dtpfechaVuelo
+        '
+        Me.dtpfechaVuelo.Location = New System.Drawing.Point(327, 98)
+        Me.dtpfechaVuelo.Name = "dtpfechaVuelo"
+        Me.dtpfechaVuelo.Size = New System.Drawing.Size(165, 20)
+        Me.dtpfechaVuelo.TabIndex = 17
+        '
+        'Button4
+        '
+        Me.Button4.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button4.ForeColor = System.Drawing.SystemColors.Highlight
+        Me.Button4.Location = New System.Drawing.Point(346, 298)
+        Me.Button4.Name = "Button4"
+        Me.Button4.Size = New System.Drawing.Size(100, 23)
+        Me.Button4.TabIndex = 18
+        Me.Button4.Text = "Volver"
+        Me.Button4.UseVisualStyleBackColor = True
+        '
         'MenuTrabajadorIngresos
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(529, 358)
+        Me.Controls.Add(Me.Button4)
+        Me.Controls.Add(Me.dtpfechaVuelo)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.PbAvion)
         Me.Controls.Add(Me.Label8)
-        Me.Controls.Add(Me.TbFechaVuelo)
         Me.Controls.Add(Me.TbCodigoVuelo)
         Me.Controls.Add(Me.TbNombrePiloto)
         Me.Controls.Add(Me.TbModeloAvion)
@@ -226,10 +239,11 @@ Partial Class MenuTrabajadorIngresos
     Friend WithEvents TbModeloAvion As TextBox
     Friend WithEvents TbNombrePiloto As TextBox
     Friend WithEvents TbCodigoVuelo As TextBox
-    Friend WithEvents TbFechaVuelo As TextBox
     Friend WithEvents Label8 As Label
     Friend WithEvents PbAvion As PictureBox
     Friend WithEvents Button1 As Button
     Friend WithEvents Button2 As Button
     Friend WithEvents Button3 As Button
+    Friend WithEvents dtpfechaVuelo As DateTimePicker
+    Friend WithEvents Button4 As Button
 End Class

@@ -34,7 +34,7 @@
 
 
 
-            If (consulta.getLogin(Me.motor, tbuser.Text, tbpass.Text, "persona").Rows.Count > 0) Then
+            If (consulta.getLogin(Me.motor, tbuser.Text.ToString, tbpass.Text.ToString, "persona").Rows.Count > 0) Then
 
 
 
@@ -58,13 +58,13 @@
                     Else
                         'atencion al cliente
                         Dim atencionAlcliente As New AtencionAlCliente(Me.motor, Me)
-                            MsgBox("Bienvenido Trabajador")
-                            atencionAlcliente.Show()
-                            Me.Dispose()
-
-                        End If
+                        MsgBox("Bienvenido Trabajador")
+                        atencionAlcliente.Show()
+                        Me.Dispose()
 
                     End If
+
+                End If
 
 
 
@@ -72,7 +72,7 @@
 
 
 
-                    MsgBox("Usuario no se encuentra en el sistema")
+                MsgBox("Usuario no se encuentra en el sistema")
 
                 End If
 
@@ -135,5 +135,12 @@
             e.Cancel = True
             Exit Sub
         End If
+    End Sub
+
+    Private Sub LinkLabel1_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel1.LinkClicked
+        Dim registro As New Registro(Me.motor, Me)
+
+        registro.Show()
+        Me.Dispose()
     End Sub
 End Class

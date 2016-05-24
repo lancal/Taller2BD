@@ -27,11 +27,14 @@
     End Sub
 
     Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
-
+        MsgBox("Bienvenido al Menu Para la Edicion de Aviones o Vuelo")
+        Dim menutrabajadoredicion As New MenuTrabajadorEdicion(Me.motor, Me)
+        menutrabajadoredicion.Show()
+        Me.Dispose()
     End Sub
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
-        MsgBox("Bienvenido al Menu del Trabajador Para Ingresar Aviones o Vuelo")
+        MsgBox("Bienvenido al Menu Para Ingresar Aviones o Vuelo")
         Dim menutrabajador As New MenuTrabajadorIngresos(Me.motor, Me)
         menutrabajador.Show()
         Me.Dispose()

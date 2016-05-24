@@ -107,7 +107,7 @@
         Try
 
 
-            buscarCodigoVuelo = consulta.getAvionPorCodigo(Me.motor, TbCodigoVuelo.Text, "vuelo")
+            buscarCodigoVuelo = consulta.getVueloPorCodigo(Me.motor, TbCodigoVuelo.Text, "vuelo")
             If (buscarCodigoVuelo.Rows.Count > 0) Then
                 MsgBox("Lo siento, ya existe el Vuelo.")
                 Return
@@ -120,7 +120,13 @@
 
 
 
-        consulta.agregarVuelo(Me.motor, TbCodigoVuelo.Text, TbFechaVuelo.Text)
-        MsgBox("El Avion fue ingresado exitosamente")
+        consulta.agregarVuelo(Me.motor, TbCodigoVuelo.Text, dtpfechaVuelo.Text)
+        MsgBox("El Vuelo fue ingresado exitosamente")
+    End Sub
+
+    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
+        Dim volverLogin As New Trabajador("access", Me)
+        volverLogin.Show()
+        Me.Dispose()
     End Sub
 End Class
